@@ -1,0 +1,18 @@
+<h2>Todo</h2>
+<div ng-controller="TodoListController as todoList">
+    <ul class="collapsible" ng-repeat="todo in todoList.todos">
+        <li>
+        <label class="checkbox">
+        <input type="checkbox" ng-model="todo.done" ng-click="done($index)">
+        <span class="done-{{todo.done}}">{{todo.name}}</span>
+        </label>
+        
+        <a href="#!/edit/{{$index}}" ><i class="material-icons">edit</i></a>
+        <a href="" ng-click="delete($index)" ><i class="material-icons">delete_forever</i></a>
+    </li>
+    </ul>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <a href="#!/add"  class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+</div>

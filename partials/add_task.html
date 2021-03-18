@@ -1,0 +1,26 @@
+
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<div>
+    <form>
+        <label for="name_task">Nom de la tâche :</label>
+        <input type="text" id="name_task" ng-model="name_task" placeholder="Nom de la tâche"></input>
+
+        <label for="context_task">Contexte de la tâche :</label>
+        <input type="text" id="context_task" ng-model="context_task" placeholder="Context de la tâche"></input>
+
+        <label for="date_task">Date de la tâche :</label>
+        <input type="date" id="date_task" name="date" class="datepicker" ng-model="date_task" placeholder="yyyy-mm-dd"> </input>
+        
+        <label for="duree_task">Durée de la tâche (minute):</label>
+        <input type="number" id="duree_task" ng-model="duree_task" placeholder="Durée de la tâche"> </input>
+
+        <label for="desc_task">Description de la tâche :</label>
+        <input type="text" id="desc_task" ng-model="desc_task" placeholder="Description"></input>
+
+        <label for="url_task">URL :</label>
+        <input type="text" id="url_task" ng-model="url_task" placeholder="URL"></input>
+
+        <a href="#!/" id="add_button" ng-click="addTask()">Valider</a>
+        <a href="#!/" id="cancel_button">Annuler</a>
+    </form>
+</div>

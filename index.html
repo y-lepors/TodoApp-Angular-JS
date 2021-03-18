@@ -1,0 +1,42 @@
+<html ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/controllers.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" />
+    <link rel="icon" href="https://images.emojiterra.com/openmoji/v12.2/512px/2705.png" />
+    <title>Todo App</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">TodoApp</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li> <a onclick="myFunction()"><i class="material-icons">brightness_6</i></a></li>
+            <li><a href="#!/add">Add Task</a></li>
+            <li><a href="#!/">List Task</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  <div id="divP" ng-view >
+
+  </div>
+
+  <footer class="page-footer">
+    
+      <div class="container">
+      © 2021 Copyright todoApp
+      <a class="grey-text text-lighten-4 right" href="#!">Yanis Le Pors</a>
+      </div>
+    
+  </footer>
+      
+</body>
+
+</html>
